@@ -1,0 +1,9 @@
+<!-- Original author: Libardo Lara -->
+
+<b>Captura de Noticias:</b>
+<br><br>{{#payload}} 
+La noticia en {{retrieved_url}}<br> 
+Conceptos:<br>{{#concepts}} + {{text}} ({{relevance}})<br>{{/concepts}} 
+Entidades:<br>{{#entities}} + {{text}} -{{type}}({{relevance}})<br>{{/entities}}
+Sentimiento {{sentiment.document.label}} ({{sentiment.document.score}}) 
+<br><br>{{/payload}}
